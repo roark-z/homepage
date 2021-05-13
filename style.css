@@ -1,8 +1,18 @@
+@font-face {
+    font-family: Andale;
+    src: url(font/ANDALEMO.woff);
+}
+
 body {
-    font-family: monospace;
+    font-family: Andale;
     margin: 0px;
     padding: 100px 0px 0px 0px;
     overflow-y: scoll; /* overflow: hidden prevents full scrollbar in IE */
+
+    background-image: url(img/bg.png);
+    
+    background-attachment: fixed;
+    background-size: cover;
 }
     
 div#header {
@@ -11,18 +21,75 @@ div#header {
     top:0px;
     left: 0px;
     width: 100%;
-    height: 100px;
-    background-color: #272932;
+    height: 48px;
+    background-color: #272932dd;
     overflow: hidden;
+    display: inline;
+}
+
+#ul_nav li {
+    display: inline;
+    padding-left:8px;
+    padding-right: 8px
 }
 
 div#brand {
-    padding:16px 16px;
+    padding:8px 8px;
+}
+
+div#nav { 
+    position:absolute;
+    right:15px;
+    /* bottom: 6px */
+}
+
+
+@font-face {
+    font-family: MN20;
+    src: url(font/modernno20.ttf);
+}
+
+div#titleContainer{
+    height: 540px;
+}
+
+div#subtitle{
+    color: #ffffff;
+    font-size: 150%;
+    position:absolute;
+    bottom: 180px;
+    left:80px
+}
+
+div#title{
+    margin-top: -2% ;
+    font-family: MN20;
+    color: #ffffff;
+    font-size: 500%;
+    position:absolute;
+    bottom: 0;
+    left:80px
+}
+
+div#splash {
+    background-color: #ffffff;
+    padding:50px
 }
 
 img#brand {
-    width:64px;
-    height:64px;
+    width:32px;
+    height:32px;
+    display: inline;
+    float:left;
+}
+
+img#line {
+    max-width:300%;
+    height:50%;
+    width:auto\9;
+    padding:0px 40px;
+    /* display: inline; */
+    /* float: left; */
 }
     
 #content { height: 100%; overflow: auto; }
