@@ -16,7 +16,6 @@ body {
 }
     
 div#header {
-    color: #ffffff;
     position: fixed;
     top:0px;
     left: 0px;
@@ -28,6 +27,7 @@ div#header {
 }
 
 #ul_nav li {
+    color: #fff;
     display: inline;
     padding-left:8px;
     padding-right: 8px
@@ -57,8 +57,8 @@ div#subtitle{
     color: #ffffff;
     font-size: 150%;
     position:absolute;
-    bottom: 180px;
-    left:80px
+    bottom: 140px;
+    left:50px
 }
 
 div#title{
@@ -66,14 +66,54 @@ div#title{
     font-family: MN20;
     color: #ffffff;
     font-size: 500%;
+    font-size-adjust: inherit;
     position:absolute;
-    bottom: 0;
-    left:80px
+    bottom:-40px;
+    left:50px
+}
+
+
+div#headingContainer{
+    height: 100px
+}
+
+div#heading{
+    margin-top: -2% ;
+    font-family: MN20;
+    color: #ffffff;
+    font-size: 600%;
+    font-size-adjust: inherit;
+    position:absolute;
+    bottom: 252px;
+    left:50px
+}
+
+div#headingDrop{
+    margin-top: -2% ;
+    font-family: MN20;
+    color: #25242c;
+    font-size: 600%;
+    font-size-adjust: inherit;
+    position:absolute;
+    top: 141px;
+    left:50px;
+    overflow: hidden;
+    clip-path: polygon(0% 79%, 100% 79%, 100% 100%,  0% 100%)
+}
+
+div#arrow{
+    color: #ffffff;
+    font-size: 300%;
+    position:absolute;
+    bottom: 150px;
+    left:575px
 }
 
 div#splash {
     background-color: #ffffff;
-    padding:50px
+    color: #888888;
+    padding:50px;
+    overflow:hidden
 }
 
 img#brand {
@@ -91,5 +131,10 @@ img#line {
     /* display: inline; */
     /* float: left; */
 }
+
+/* unvisited link */
+a {
+    text-decoration: none;
+} 
     
 #content { height: 100%; overflow: auto; }
