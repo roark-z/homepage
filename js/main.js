@@ -6,6 +6,15 @@ $(document).ready(function(){
     highlightButton();
 
     $('#pageName').hide()
+
+    $('#c').hover(function() {
+        $(this).animate({color: "#d261ff"}, 100, 'linear');
+    }, function() {
+        $(this).animate({color: '#888888'}, 200, 'linear');
+    })
+
+    $('#c').click(function() {
+        window.location = "contact.html"})
   });
 
 function highlightButton() {
