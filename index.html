@@ -1,75 +1,269 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Hello
-        </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src='js/main.js'></script>
-    </head> 
-    <body>
-    <div id="pageName">home</div>
-    <div id="page">
-        <div id="header">
-            <div id="brand">
-                <img id="brand" src="img/logo.png">
-            </div>
-            <div id="nav">
-                <ul id='ul_nav', style= 'list-style-type: none; display: inline;'>
-                    <li id='home'>home</li>
-                    <li id='about'>about</li>
-                    <li id='projects'>projects</li>
-                    <li id='contact'>contact</li>
-                </ul>
-            </div>
-        </div>
-        <div id='titleContainer'>
-
-            <div id="subtitle">
-                Hi, I'm
-            </div>
-            <div id="title">
-                <p>Roark Zhang</p>
-            </div>
-
-            <div id="arrow">
-                <p></p>
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello!</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+  <!--  Simple reset to delete the margins  -->
+  <style>
+    body { margin: 0; }
+    canvas { width: 100%; height: 100% }
+    pre.a {
+      font-family: Consolas, sans-serif;
+      /* font-size: 12px; */
+      line-height: 1.37;
+      color:rgb(223, 204, 183)
+    } 
+    pre.b {
+      font-family: Consolas, sans-serif;
+      /* font-size: 12px; */
+      line-height: 1.37;
+      color:rgb(105, 94, 82)
+    } 
+    pre.title {
+      font-family: Consolas, sans-serif;
+      font-size: 24px;
+      line-height: 1.37;
+      color:rgb(223, 204, 183)
+    } 
+    .center {
+      margin: auto;
+      width: 50%;
+      height: 50%;
+      /* border: 3px solid green; */
+      padding: 10px;
+    }
+    .center pre {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 65%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    a.r {
+      color: #BB8588 
+    }
+    a.o {
+      color: #D8A48F 
+    }
+    a.g {
+      color: #e5e0bc  
+    }
+    a.c {
+      color: #D6CE93 
+    }
+    a.b {
+      color: #A9A985   
+    }
+    a.db {
+      color:#82778c          
+    }
+    a.seven {
+      color:  #957a84   
+    }
+    a.t {
+      color:  #9E788F  
+    }
+    a.link{
+      color:rgb(223, 204, 183)
+    }
     
-        </div>
-    
-        <div id="splash">
+    .button2 {
+      font-family: Consolas, sans-serif;
+      color:#DA6951;
+      background-color:rgb(39, 36, 34);
+      border:0px solid #DA6951;
+    }
 
-            <h1>
-                This page is still under construction!
-            </h1>
+    div.container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 34%
+    }
 
-            <p>
-                Hey, thanks for stopping by!<br>
-                In the meantime, feel free to <span id='c'><u>reach out</u></span>.
-            </p>
-            <br>
+    div.maindiv, div.rightpics {display: inline-block; zoom: 1; vertical-align: top; font-size: 16px;}
 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Feugiat vivamus at augue eget. Quisque non tellus orci ac auctor augue mauris augue neque. Adipiscing at in tellus integer feugiat scelerisque. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Enim neque volutpat ac tincidunt. Ultricies leo integer malesuada nunc. Ultrices dui sapien eget mi proin sed. Fringilla urna porttitor rhoncus dolor purus non. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Sapien eget mi proin sed. Morbi tristique senectus et netus et. Tellus elementum sagittis vitae et leo duis ut diam. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Diam sollicitudin tempor id eu. Convallis tellus id interdum velit laoreet id donec ultrices. Sed libero enim sed faucibus turpis in eu mi bibendum.
-            </p>
-            <p>
-                Blandit cursus risus at ultrices mi. Gravida neque convallis a cras semper. Fermentum posuere urna nec tincidunt praesent semper. Sagittis orci a scelerisque purus semper eget duis. Enim ut sem viverra aliquet eget sit amet tellus cras. Ultrices neque ornare aenean euismod elementum. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed augue lacus viverra vitae. Quam quisque id diam vel quam elementum pulvinar. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Pellentesque habitant morbi tristique senectus et. Odio ut sem nulla pharetra diam sit amet. Quis enim lobortis scelerisque fermentum dui faucibus. Sit amet mattis vulputate enim nulla. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Molestie at elementum eu facilisis sed. Vel pharetra vel turpis nunc.
-            </p>
-            <p>
-                Vitae ultricies leo integer malesuada nunc. Elementum tempus egestas sed sed risus pretium quam vulputate. Non sodales neque sodales ut etiam sit amet. Nisi quis eleifend quam adipiscing. Velit egestas dui id ornare. Phasellus vestibulum lorem sed risus ultricies tristique. Tellus mauris a diam maecenas sed. Sed risus pretium quam vulputate dignissim suspendisse in. Nunc sed velit dignissim sodales ut eu sem integer. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia.
-            </p>
-            <p>
-                Enim ut tellus elementum sagittis vitae et leo duis. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Lacus sed viverra tellus in hac habitasse platea. Tellus in hac habitasse platea. Phasellus egestas tellus rutrum tellus pellentesque eu. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Ac turpis egestas sed tempus. Consequat nisl vel pretium lectus. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Faucibus interdum posuere lorem ipsum. Tellus cras adipiscing enim eu turpis egestas pretium aenean.
-            </p>
-            <p>
-                Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Libero nunc consequat interdum varius. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Viverra vitae congue eu consequat ac felis. Laoreet sit amet cursus sit amet dictum sit. Feugiat nisl pretium fusce id. Tortor vitae purus faucibus ornare suspendisse sed. Eu nisl nunc mi ipsum faucibus. Dictum fusce ut placerat orci. Nulla aliquet enim tortor at auctor urna nunc id cursus. Nibh mauris cursus mattis molestie a iaculis at. Quis risus sed vulputate odio.
-            </p>
-        </div>
+    div.duckFrame {
+      display:inline-block;
+      position:relative;
+      top: -2880px;
+      left: 176px;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(39, 36, 34);">
+  <div class="container">
+    <div class="maindiv"><a id="duck"></a>
+      <pre class="a">
+
+                                                         
+
+              _____               ____                   __  
+             /  _( )____ ___     / __ \____  ____ ______/ /__
+             / / |// __ `__ \   / /_/ / __ \/ __ `/ ___/ //_/
+           _/ /   / / / / / /  / _, _/ /_/ / /_/ / /  / ,<   
+          /___/  /_/ /_/ /_/  /_/ |_|\____/\__,_/_/  /_/|_|    <div id='maindiv'>
+      ╒═══════════════════════════════════════════════════════╕         
+      │       -- H  E  L  L  O    T  H  E  R  E  :  ) --      │        
+    ─ ┴───────────────────────────────────────────────────────┴ ─      
+                        (c) Roark Zhang 2024                            
+    ─ ┬───────────────────────────────────────────────────────┬ ─      
+      │                <i>! under construction !</i>                 │        
+      |                                                       |        
+      ├────────────┬──────────────────────────────────────────┤        
+      │  <a href="#duck" class="link">Duck</a>      │                                          │         
+      ├────────────┤                                          │        
+      │  <a href="#home" class="link">Home</a>      │                                          │        
+      ├────────────┤                                          │        
+      │  <a href="#aboutme" class="link">About me</a>  │                                          │        
+      ├────────────┤                                          │        
+      │  <a href="#other" class="link">Other</a>     │                                          │        
+      ├────────────┤                                          │        
+      │  <a href="#credits" class="link">Credits</a>   │                                          │        
+      ├────────────┤                                          │        
+      │            │                                          │        
+      │            │                                          │        
+      │            │                                          │        
+      │            │                                          │        
+      │            │                                          │        
+      │            │                                          │<a id="home"></a>        
+      ├────────────┴──────────────────────────────────────────┤
+      |  Home         The duck is home.                       |        
+      │                                                       │<a id="aboutme"></a>
+      ├───────────────────────────────────────────────────────┤
+      |  About me     Intro --- Roark is a masters student    |
+      |                         at the University of          |
+      |                         Washington. He is studying    |
+      |                         Computer Science and AI       |
+      |                         and hopes to one day create   |
+      |                         AGI. He is interested in      |
+      |                         all sorts of AI research,     |
+      |                         but he loves the idea of AI   |
+      |                         that can learn by itself.     |
+      │                                                       │<a id="other"></a>
+      ├───────────────────────────────────────────────────────┤
+      |  Other        Github -- <a href="https://github.com/roark-z" class="link">roark-z</a>                       │<a id="credits"></a>
+      │                                                       │
+      ├───────────────────────────────────────────────────────┤<a id="credits"></a>
+      |  Credits      Website by Roark Zhang                  |        
+      │                                                       │
+      |               Thanks to Xabier Garcia on sketchfab    |
+      |               for the "Cartoony Rubber Ducky"         |
+      |               https://sketchfab.com/3d-models/cartoo  |
+      |               ny-rubber-ducky-8a6e661916b74f9caa1c20  |
+      |               dd6fdf77ad                              |
+      |               Used under cc attribution               |        
+      │                                                       │
+      ├───────────────────────────────────────────────────────┤        
+      │                                                       │        
+      │    <i>Remember that what you now have was once among</i>     │        
+      │           <i>the things you only hoped for.</i>              │        
+      │                                                       │        
+      ├───────────────────────────────────────────────────────┤        
+      │                                                       │    
+      │                                                       │
+                                                                       
+      ╵                                                       ╵ 
+                                                                               
+      ╵                        ·                              ╵    
+      
+                                      ˖      ˚  
+      <!-- ˚. ✦.˳·˖✶ ⋆.✧˚. -->
+                          ·
+
+
+       +                                   ˚
+                                 ✦
+
+                     ˳   
+             ✧                        ✧
+                 .
+
+                      ˚     ✶
+               ✶       ˳                  ✦       ✧ ˖
+                  ˳
+                                   ˖
+
+                      .                              ✧
+                    .                          ✦˖
+        ˖       ✧           ˖     ˳
+            ˚ ˳   ˖
+                       .  .                 ✦             ˖      ˖
+                  ✶ ✧
+              ˖
+                  .   ˖
+                                  ✶  ✦            ˳
+
+               ˳
+
+                               ˖
+                                                    .
+                                        ✧
+
+                                        ˳                     ✧
+                          ✶
+                              .
+    ˖
+                        ˖
+            ✦
+                                                               ˖
+                  .   .
+                          .                       ˚
+
+
+            .     ✶˚               ˚
+                      ·
+˚                                     ✦   ˚   ✶
+                                       · 
+
+                                 ˚
+                  
+                 ✶   ˚           ✶ ✦              ˖
+                        ✦               ✦
+                      ✶
+                          .
+                              ˚ ✦
+
+
+
+                        ✶                      .
+
+      ╷                                                       ╷
+
+      ╷                           ˖                           ╷
+                           
+      │                                                       │         
+      │                                                       |
+      |             Congratulations, you made it              │         
+      │           to the end. The prize is a hug :)           │         
+      │                                                       │
+      ╘═══════════════════════════════════════════════════════╛
+                                                                       
+
+      </pre>
     </div>
-    </body>
+    <div class="duckFrame">
+      <pre class="a">
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+      </pre>
+    </div>
+  <script src="hiddencanvas.js"></script>
+</body>
 </html>
- 
